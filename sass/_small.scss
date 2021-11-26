@@ -1,5 +1,55 @@
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+	.info {
+		grid-template-areas:
+			'title box'
+			'title box'
+			'title box';
+		padding: 10em 2em;
+		&__box {
+			display: grid;
+			justify-content: end;
+		}
+		&__title {
+			padding: 0 1em;
+		}
 
+		&__box-img,
+		&__box-text {
+			max-width: 550px;
+		}
+		&__bg-icon {
+			position: absolute;
+			display: block;
+			opacity: 0.05;
+			z-index: -5;
+            &--one {
+                top: 15%;width: 25%;
+                transform: rotate(17deg);
+                animation: rotate-right 100s infinite linear;
+            }
+            &--two {
+                bottom: 15%;
+                width: 31%;
+                left: 10%;
+                transform: rotate(-17deg);
+                animation: rotate-right 120s infinite linear;
+            }
+            &--three {
+                top: 28%;width: 49%;
+                transform: rotate(17deg);
+                left: 12%;
 
-
+                animation: rotate-right 110s infinite linear;
+            }
+            &--four {
+                top: 55%;width: 14%;
+                left: -10%;
+                transform: rotate(-17deg);
+                animation: rotate-right 100s infinite linear;
+            
+		
+		
+		}
+		}
+	}
 }
