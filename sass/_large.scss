@@ -1,12 +1,10 @@
 @media (min-width: 992px) {
-
-.section-title {
-	font-size: 4.8rem;
-	&::before {
-		height: 4px;
+	.section-title {
+		font-size: 4.8rem;
+		&::before {
+			height: 4px;
+		}
 	}
-}
-
 
 	.header {
 		grid-template-rows: auto repeat(2, 1fr);
@@ -98,8 +96,13 @@
 @media (min-width: 1200px) {
 	.header {
 		&__text {
-			p{
-			font-size: 2.2rem;}
+			p {
+				font-size: 2.2rem;
+			}
 		}
+	}
+
+	.gallery {
+		grid-template-columns: repeat(8, 1fr);
 	}
 }
